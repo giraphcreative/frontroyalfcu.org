@@ -2,8 +2,12 @@
 
 .home-pad {
 	a {
+		opacity: 1;
+		transition: 300ms all ease-in-out;
+
 		&:hover {
 			text-decoration: none;
+			opacity: .85;
 		}
 
 		h5 {
