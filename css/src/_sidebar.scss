@@ -1,0 +1,18 @@
+
+
+.sidebar {
+	.widget {
+		padding: 5px 0;
+		font-size: 15px;
+
+		h4 {
+			@include font-bold;
+			background: $forest;
+			color: white;
+			padding: 15px 0 7px;
+			font-size: 20px;
+			font-style: normal;
+		}
+	}
+}
+

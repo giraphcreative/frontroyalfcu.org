@@ -1,0 +1,146 @@
+
+
+header {
+
+	.logo {
+		padding: 10px 20px;
+		text-align: center;
+
+		@include respond-to( 600px ) {
+			width: 50%;
+			float: left;
+			padding: 20px;
+		}
+	}
+
+	.banking {
+		background: $lime;
+		color: white;
+		padding: 10px 20px;
+		display: block;
+		transition: 400ms opacity ease-in-out;
+		text-align: center;
+
+		&:hover {
+			opacity: .9;
+			text-decoration: none;
+		}
+
+		h3 {
+			text-transform: uppercase;
+		}
+
+		@include respond-to( 600px ) {
+			float: right;
+		}
+	}
+
+	nav {
+		background: $lime;
+		@include clearfix;
+		position: relative;
+
+		button {
+			position: absolute;
+			right: 10px;
+			top: -50px;
+			width: 40px;
+			height: 40px;
+			border: 0;
+			padding: 0;
+			background: white;
+			color: black;
+			background: url(../img/icon-menu.png) center center no-repeat;
+		}
+
+		ul.nav-menu {
+			background: $forest;
+			position: relative;
+
+			@include respond-to( 600px ) {
+				float: right;
+				height: 60px;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -43px;
+					bottom: 0;
+					width: 43px;
+					background: url(../img/menu-stripe.png) center center no-repeat;
+				}
+			}
+			
+			li {
+				@include respond-to( 600px ) {				
+					display: inline;
+				}
+
+				a {
+					@include font-title;
+					display: block;
+					padding: 10px 5px;
+					font-size: 20px;
+					line-height: 20px;
+					color: white;
+					text-align: center;
+					text-decoration: none;
+					width: 100%;
+					transition: 300ms background-color ease-in-out;
+
+					@include respond-to( 600px ) {
+						display: inline-block;
+						width: auto;
+						padding: 20px;
+					}
+				}
+
+				&:hover, &.open {
+					a {
+						background-color: $lime;
+					}
+				}
+
+				ul.sub-menu {
+					display: none;
+					margin-bottom: 3px;
+
+					@include respond-to( 600px ) {
+						position: absolute;
+						left: 0;
+						top: 55px;
+						width: 100%;
+						background: $lime;
+						@include clearfix;
+					}
+
+					li {
+						display: block;
+						width: 100%;
+
+						a {
+							padding: 10px 40px;
+							font-size: 18px;
+							line-height: 18px;
+							display: block;
+
+							@include respond-to( 600px ) {
+								padding: 15px 10px;
+
+								&:hover {
+									background: lighten( $lime, 5% );
+								}
+							}
+
+							@include respond-to( 1220px ) {
+								padding: 15px 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

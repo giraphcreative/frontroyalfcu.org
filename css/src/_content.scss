@@ -1,0 +1,53 @@
+
+
+.container {
+	min-width: 300px;
+	max-width: 1220px;
+	margin: 0 auto;
+	background: white;
+	box-shadow: 0 0 50px #ccc;
+}
+
+.content {
+	h1, h2, h3, h4, h5, h6 {
+		padding: 6px 0;
+	}
+}
+
+.content-narrow {
+	padding: 40px 20px;
+	max-width: 1024px;
+	margin: 0 auto;
+	@extend .content-style;
+}
+
+.content-wide {
+	@include clearfix;
+	@extend .content-style;
+	padding: 40px 20px;
+
+	@include respond-to( 1024px ) {
+		padding: 30px 40px 50px;
+	}
+
+	@include respond-to( 1220px ) {
+		padding: 40px 60px 60px;
+	}
+}
+
+
+.fluid-width-video-wrapper {
+	margin: 15px 0;
+}
+
+
+table {
+	width: 100%;
+
+	tr {
+		td {
+			vertical-align: top;
+			padding: 6px 10px;
+		}
+	}
+}
