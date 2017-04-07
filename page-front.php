@@ -30,7 +30,7 @@ get_header();
 
 	</div>
 
-	<div class="home-pad text-center group">
+	<div class="home-pad icons text-center group">
 		
 		<div class="fifth">
 			<a href="/services/rates">

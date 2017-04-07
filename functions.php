@@ -26,8 +26,6 @@ include( "library/showcase.php" );
 
 
 
-
-
 // pagination
 function pagination( $prev = '&laquo;', $next = '&raquo;' ) {
     global $wp_query, $wp_rewrite;
