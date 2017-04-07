@@ -7,11 +7,13 @@
 
 .bg-lime { background-color: $lime; color: white; }
 .bg-forest { background-color: $forest; color: white; }
-.bg-grey-light { background-color: $grey; color: white; }
-.bg-grey-dark { background-color: darken( $grey, 30% ); color: white; }
+.bg-grey-light { background-color: $grey-light; color: white; }
+.bg-grey { background-color: $grey; color: white; }
+.bg-grey-dark { background-color: $grey-dark; color: white; }
 
 .text-lime { color: $lime; }
 .text-forest { color: $forest; }
-.text-grey-light { color: $grey; }
+.text-grey-light { color: $grey-light; }
+.text-grey { color: $grey; }
 .text-grey-dark { color: darken( $grey, 30% ); }
 

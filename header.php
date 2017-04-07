@@ -6,7 +6,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<title><?php wp_title( '|', true, 'right' ); ?> St. Matthews FCU</title>
+<title><?php wp_title( '|', true, 'right' ); ?> Front Royal FCU</title>
 
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -34,7 +34,7 @@
 		</div>
 		
 		<a href="https://www.financial-net.com/vb/stmatthewsfcu/" class="banking" target="_blank">
-			<h3>Home Banking</h3>
+			<p class="caps"><strong>Home Banking</strong></p>
 			<p>Log in &gt;</p>
 		</a>
 

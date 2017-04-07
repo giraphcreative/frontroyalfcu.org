@@ -35,6 +35,11 @@
 	}
 }
 
+.content-two-column {
+	@include clearfix;
+	position: relative;
+}
+
 
 .fluid-width-video-wrapper {
 	margin: 15px 0;
@@ -51,3 +56,4 @@ table {
 		}
 	}
 }
+

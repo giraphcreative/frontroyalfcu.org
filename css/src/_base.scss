@@ -48,8 +48,8 @@ p {
 	padding: 8px 0;
 }
 
-strong {
-	font-weight: bold;
+strong, b {
+	@include font-bold;
 }
 
 a {
