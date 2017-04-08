@@ -58,3 +58,21 @@ footer {
 	}
 }
 
+
+.colophon {
+	@include clearfix;
+	
+	.third {
+		@include font;
+		font-size: .7em;
+
+		&.links {
+			font-size: 1em;
+		}
+	}
+
+	img {
+		max-width: 30%;
+	}
+}
+

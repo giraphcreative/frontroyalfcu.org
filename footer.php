@@ -48,7 +48,17 @@
 	</footer><!-- #colophon -->
 
 	<div class="colophon">
-		
+		<div class="third">
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright">Your savings are federally insured to at least $250,000, ad backed by the full faith and credit of the united states government. 
+		</div>
+		<div class="third">
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
+		</div>
+		<div class="third links">
+			<a href=""><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright"></a>
+			<a href="#">Privacy Policy</a><br>
+			<a href="#">Notices &amp; Policies</a>
+		</div>
 	</div>
 
 </div><!-- #container -->

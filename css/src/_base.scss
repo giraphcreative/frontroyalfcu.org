@@ -84,6 +84,19 @@ button, input[type=submit], .fasc-button {
 }
 
 
+img {
+	&.alignleft {
+		float: left;
+		margin: 0 10px 10px 0;
+	}
+
+	&.alignright {
+		float: right;
+		margin: 0 0 10px 10px;
+	}
+}
+
+
 .content-style {
 	ol, ul {
 		padding: 5px 0 5px 35px;
@@ -141,6 +154,8 @@ button, input[type=submit], .fasc-button {
 			color: #777;
 		}
 	}
+
+
 }
 
 .pagination {
