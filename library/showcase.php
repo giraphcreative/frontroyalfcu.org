@@ -61,4 +61,92 @@ function the_showcase() {
 }
 
 
+
+// ad showcase
+function the_ad_showcase() {
+
+	$ads = get_cmb_value( 'ad_showcase' );
+
+	if ( !empty( $ads[0]['link'] ) && !empty( $ads[0]['image'] ) ) { ?>
+	<div class="quarter">
+		<a href="<?php print $ads[0]['link']; ?>"><img src="<?php print $ads[0]['image']; ?>"></a>
+	</div>
+	<?php } 
+
+	if ( !empty( $ads[1]['link'] ) && !empty( $ads[1]['image'] ) ) { ?>
+	<div class="quarter">
+		<a href="<?php print $ads[1]['link']; ?>"><img src="<?php print $ads[1]['image']; ?>"></a>
+	</div>
+	<?php } 
+
+	if ( !empty( $ads[2]['link'] ) && !empty( $ads[2]['image'] ) ) { ?>
+	<div class="quarter">
+		<a href="<?php print $ads[2]['link']; ?>"><img src="<?php print $ads[2]['image']; ?>"></a>
+	</div>
+	<?php } 
+
+	if ( !empty( $ads[3]['link'] ) && !empty( $ads[3]['image'] ) ) { ?>
+	<div class="quarter">
+		<a href="<?php print $ads[3]['link']; ?>"><img src="<?php print $ads[3]['image']; ?>"></a>
+	</div>
+	<?php } 
+
+}
+
+
+
+// ad showcase
+function the_icon_showcase() {
+
+	$icons = get_cmb_value( 'icon_showcase' );
+
+	if ( !empty( $icons[0]['link'] ) && !empty( $icons[0]['image'] ) && !empty( $icons[0]['title'] ) ) { ?>
+	<div class="fifth">
+		<a href="<?php print $icons[0]['link']; ?>">
+			<img src="<?php print $icons[0]['image']; ?>">
+			<h5><?php print $icons[0]['title']; ?></h5>
+		</a>
+	</div>
+	<?php } 
+
+	if ( !empty( $icons[1]['link'] ) && !empty( $icons[1]['image'] ) && !empty( $icons[1]['title'] ) ) { ?>
+	<div class="fifth">
+		<a href="<?php print $icons[1]['link']; ?>">
+			<img src="<?php print $icons[1]['image']; ?>">
+			<h5><?php print $icons[1]['title']; ?></h5>
+		</a>
+	</div>
+	<?php } 
+
+	if ( !empty( $icons[2]['link'] ) && !empty( $icons[2]['image'] ) && !empty( $icons[2]['title'] ) ) { ?>
+	<div class="fifth">
+		<a href="<?php print $icons[2]['link']; ?>">
+			<img src="<?php print $icons[2]['image']; ?>">
+			<h5><?php print $icons[2]['title']; ?></h5>
+		</a>
+	</div>
+	<?php } 
+
+	if ( !empty( $icons[3]['link'] ) && !empty( $icons[3]['image'] ) && !empty( $icons[3]['title'] ) ) { ?>
+	<div class="fifth">
+		<a href="<?php print $icons[3]['link']; ?>">
+			<img src="<?php print $icons[3]['image']; ?>">
+			<h5><?php print $icons[3]['title']; ?></h5>
+		</a>
+	</div>
+	<?php } 
+
+	if ( !empty( $icons[4]['link'] ) && !empty( $icons[4]['image'] ) && !empty( $icons[4]['title'] ) ) { ?>
+	<div class="fifth">
+		<a href="<?php print $icons[4]['link']; ?>">
+			<img src="<?php print $icons[4]['image']; ?>">
+			<h5><?php print $icons[4]['title']; ?></h5>
+		</a>
+	</div>
+	<?php } 
+
+}
+
+
+
 ?>

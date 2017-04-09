@@ -45,6 +45,8 @@ header {
 		position: relative;
 
 		button {
+			display: none;
+			/*
 			position: absolute;
 			right: 10px;
 			top: -50px;
@@ -57,8 +59,9 @@ header {
 			background: url(../img/icon-menu.png) center center no-repeat;
 
 			@include respond-to( 600px ) {
-				display: none;
+
 			}
+			*/
 		}
 
 		ul.nav-menu {
@@ -83,6 +86,7 @@ header {
 			li {
 				@include respond-to( 600px ) {				
 					display: inline;
+					position: relative;
 				}
 
 				a {
@@ -112,6 +116,10 @@ header {
 					a {
 						background-color: lighten( $forest, 5% );
 					}
+
+					ul.sub-menu {
+						display: block;
+					}
 				}
 
 				ul.sub-menu {
@@ -120,9 +128,10 @@ header {
 
 					@include respond-to( 600px ) {
 						position: absolute;
-						left: 0;
-						top: 55px;
-						width: 100%;
+						right: 0;
+						top: 38px;
+						width: 200px;
+						z-index: 2000;
 						background: lighten( $forest, 5% );
 						@include clearfix;
 					}
@@ -132,13 +141,13 @@ header {
 						width: 100%;
 
 						a {
-							padding: 10px 40px;
-							font-size: 18px;
+							padding: 7px 10px;
+							font-size: 15px;
 							line-height: 18px;
 							display: block;
 
 							@include respond-to( 600px ) {
-								padding: 15px 10px;
+								padding: 10px;
 
 								&:hover {
 									background: lighten( $forest, 10% );
