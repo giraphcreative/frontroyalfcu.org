@@ -44,6 +44,13 @@ h6 {
 	font-size: 1.1em;
 }
 
+hr {
+	border: 0;
+	border-bottom: 1px solid $grey-light;
+	height: 0;
+	margin: 12px 0;
+}
+
 p {
 	padding: 8px 0;
 }
