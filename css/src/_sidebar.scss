@@ -4,9 +4,10 @@
 	background-color: $grey-light;
 	padding: 25px;
 	margin: 0;
-	width: 25%;
+	transition: 500ms all ease-in-out;
 
 	@include respond-to( 768px ) {
+		width: 25%;
 		padding: 15px 25px;
 	}
 

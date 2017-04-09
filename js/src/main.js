@@ -10,6 +10,16 @@ jQuery(document).ready(function($){
 		fluid_images = $( '.content-area img, .site-content img' );
 
 
+	// function to set the sidebar height
+	var set_sidebar_height = function(){
+		if ( matchMedia('only screen and (min-width: 768px)').matches ) {
+			$( '.sidebar' ).height( $('.three-quarter').height() + 30 );
+		} else {
+			$( '.sidebar' ).height( 'auto' );
+		}
+	};
+
+
 	// remove height and width from images inside
 	fluid_images.removeAttr( 'width' ).removeAttr( 'height' );
 
@@ -36,15 +46,19 @@ jQuery(document).ready(function($){
 
 	});
 
-	// 
-	$( '.accordion-box-title' ).click(function(){
-		$( this ).parent( '.accordion-box' ).children( '.accordion-box-content' ).slideToggle( 600 );
-	});
 
+	// if we have a button with a 'data-url' attribute, use the property to make the button link.
 	$( 'button[data-url]' ).click(function(){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
+
 	
+	// resize the sidebar on load and when the window is resized.
+	setTimeout( function(){
+		set_sidebar_height();
+	}, 1000 );
+	$(window).resize( set_sidebar_height );
+
 });
 
 
