@@ -37,6 +37,10 @@
 .content-two-column {
 	@include clearfix;
 	position: relative;
+	
+	.three-quarter {
+		@extend .content-style;
+	}
 }
 
 

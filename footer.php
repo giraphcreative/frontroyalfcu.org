@@ -21,29 +21,13 @@
 				Routing Number: 251480631</p>
 		</div>
 		<div class="column">
-			<ul>
-				<li><a href="#">Vehicle Loans</a></li>
-				<li><a href="#">Credit Cards</a></li>
-				<li><a href="#">Mortgages</a></li>
-				<li><a href="#">Home Equity</a></li>
-				<li><a href="#">Personal Loans</a></li>
-			</ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-one', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 		<div class="column">
-			<ul>
-				<li><a href="#">Savings</a></li>
-				<li><a href="#">Checking</a></li>
-				<li><a href="#">Certificates</a></li>
-				<li><a href="#">Youth Accounts</a></li>
-			</ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-two', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 		<div class="column last">
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Locations</a></li>
-				<li><a href="#">Membership</a></li>
-			</ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-three', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 	</footer><!-- #colophon -->
 
@@ -56,8 +40,7 @@
 		</div>
 		<div class="third links">
 			<a href=""><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright"></a>
-			<a href="#">Privacy Policy</a><br>
-			<a href="#">Notices &amp; Policies</a>
+			<?php wp_nav_menu( array( 'theme_location' => 'footer-notices', 'menu_class' => 'nav-menu' ) ); ?>
 		</div>
 	</div>
 
