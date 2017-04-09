@@ -85,7 +85,7 @@ header {
 			
 			li {
 				@include respond-to( 600px ) {				
-					display: inline;
+					display: inline-block;
 					position: relative;
 				}
 
@@ -129,7 +129,7 @@ header {
 					@include respond-to( 600px ) {
 						position: absolute;
 						right: 0;
-						top: 38px;
+						top: 60px;
 						width: 200px;
 						z-index: 2000;
 						background: lighten( $forest, 5% );
