@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
 	// function to set the sidebar height
 	var set_sidebar_height = function(){
 		if ( matchMedia('only screen and (min-width: 768px)').matches ) {
-			$( '.sidebar' ).height( $('.three-quarter').height() + 30 );
+			$( '.sidebar' ).height( $('.three-quarter').height() + 50 );
 		} else {
 			$( '.sidebar' ).height( 'auto' );
 		}
