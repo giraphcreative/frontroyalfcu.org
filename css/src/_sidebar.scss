@@ -35,6 +35,7 @@
 					background-color: transparent;
 					padding: 5px 15px;
 					transition: 300ms background-color ease-in-out;
+					color: $forest;
 
 					&:hover {
 						background-color: lighten( $grey-light, 5% );
