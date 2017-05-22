@@ -26,6 +26,10 @@ include( "library/showcase.php" );
 
 
 
+// add editor stylesheet
+add_editor_style( 'editor-style.css' );
+
+
 // pagination
 function pagination( $prev = '&laquo;', $next = '&raquo;' ) {
     global $wp_query, $wp_rewrite;

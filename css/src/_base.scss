@@ -77,7 +77,7 @@ input[type=text], input[type=search], select {
 	border: 1px solid #ccc;
 }
 
-button, input[type=submit], .fasc-button {
+button, input[type=submit] {
 	@include font-title;
 	display: inline-block;
 	padding: 6px 20px;
@@ -88,111 +88,5 @@ button, input[type=submit], .fasc-button {
 	color: white;
 	text-transform: uppercase;
 	border-radius: 10px;
-}
-
-
-img {
-	&.alignleft {
-		float: left;
-		margin: 0 10px 10px 0;
-	}
-
-	&.alignright {
-		float: right;
-		margin: 0 0 10px 10px;
-	}
-}
-
-
-.content-style {
-	ol, ul {
-		padding: 5px 0 5px 35px;
-
-		li {
-			padding: 3px 0;
-		}
-
-		&.gform_fields {
-			padding: 5px 0;
-		}
-	}
-
-	ul {
-		list-style-type: disc;
-	}
-
-	ol {
-		list-style-type: decimal;
-	}
-
-	h1, h2, h3, h4, h5, h6 {
-		padding: 10px 0 5px;
-	}
-
-	blockquote {
-		padding: 10px 25px;
-		@include font;
-		font-style: italic;
-		font-size: 1.2em;
-		line-height: 1.5em;
-		color: $grey;
-		border-left: 3px solid lighten( $grey, 25% );
-		margin: 10px 0 10px 20px;
-	}
-
-	hr {
-		border: 0;
-		border-bottom: 1px solid lighten( $grey, 25% );
-		padding: 0;
-		margin: 25px 0;
-	}
-
-	.postmeta {
-		margin-top: 15px;
-		padding: 15px 0;
-		border-top: 1px solid #ccc;
-	}
-
-	.quiet {
-		color: #999;
-		font-style: italic;
-
-		a {
-			color: #777;
-		}
-	}
-
-}
-
-.pagination {
-	border-top: 1px solid lighten( $grey, 30% );
-	padding: 15px 0;
-	text-align: center;
-	font-size: 15px;
-	line-height: 15px;
-	background: lighten( $grey, 35% );
-	@include font;
-
-	@include respond-to( 768px ) {
-		padding: 40px 0;
-	}
-
-	a {
-		padding: 7px 12px;
-		background: $grey;
-		color: white;
-		text-decoration: none;
-		display: inline-block;
-
-		&:hover {
-			background: lighten( $grey, 5% );
-		}
-	}
-
-	.current {
-		padding: 7px 12px;
-		display: inline-block;
-		background: lighten( $grey, 5% );
-	}
 }
 
