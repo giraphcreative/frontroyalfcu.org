@@ -22,7 +22,7 @@ function the_showcase() {
 				// check if it's an image or video
 				if ( p_is_image( $slide["image"] ) ) {
 					// it's an image, so resize it and generate an img tag.
-					$image = '<img src="' . $slide["image"] . '">';
+					$image = '<img src="' . $slide["image"] . '" alt="Link to ' . $link . '">';
 				} else {
 					// it's a video, so oEmbed that stuffs, yo
 					$image = apply_filter( 'the_content', $slide["image"] );
@@ -69,25 +69,25 @@ function the_ad_showcase() {
 
 	if ( !empty( $ads[0]['link'] ) && !empty( $ads[0]['image'] ) ) { ?>
 	<div class="quarter">
-		<a href="<?php print $ads[0]['link']; ?>"><img src="<?php print $ads[0]['image']; ?>"></a>
+		<a href="<?php print $ads[0]['link']; ?>"><img src="<?php print $ads[0]['image']; ?>" alt="Link to <?php print $ads[0]['link']; ?>"></a>
 	</div>
 	<?php } 
 
 	if ( !empty( $ads[1]['link'] ) && !empty( $ads[1]['image'] ) ) { ?>
 	<div class="quarter">
-		<a href="<?php print $ads[1]['link']; ?>"><img src="<?php print $ads[1]['image']; ?>"></a>
+		<a href="<?php print $ads[1]['link']; ?>"><img src="<?php print $ads[1]['image']; ?>" alt="Link to <?php print $ads[1]['link']; ?>"></a>
 	</div>
 	<?php } 
 
 	if ( !empty( $ads[2]['link'] ) && !empty( $ads[2]['image'] ) ) { ?>
 	<div class="quarter">
-		<a href="<?php print $ads[2]['link']; ?>"><img src="<?php print $ads[2]['image']; ?>"></a>
+		<a href="<?php print $ads[2]['link']; ?>"><img src="<?php print $ads[2]['image']; ?>" alt="Link to <?php print $ads[2]['link']; ?>"></a>
 	</div>
 	<?php } 
 
 	if ( !empty( $ads[3]['link'] ) && !empty( $ads[3]['image'] ) ) { ?>
 	<div class="quarter">
-		<a href="<?php print $ads[3]['link']; ?>"><img src="<?php print $ads[3]['image']; ?>"></a>
+		<a href="<?php print $ads[3]['link']; ?>"><img src="<?php print $ads[3]['image']; ?>" alt="Link to <?php print $ads[3]['link']; ?>"></a>
 	</div>
 	<?php } 
 
@@ -103,7 +103,7 @@ function the_icon_showcase() {
 	if ( !empty( $icons[0]['link'] ) && !empty( $icons[0]['image'] ) && !empty( $icons[0]['title'] ) ) { ?>
 	<div class="fifth">
 		<a href="<?php print $icons[0]['link']; ?>">
-			<img src="<?php print $icons[0]['image']; ?>">
+			<img src="<?php print $icons[0]['image']; ?>" alt="<?php print $icons[0]['title']; ?>">
 			<h5><?php print $icons[0]['title']; ?></h5>
 		</a>
 	</div>
@@ -112,7 +112,7 @@ function the_icon_showcase() {
 	if ( !empty( $icons[1]['link'] ) && !empty( $icons[1]['image'] ) && !empty( $icons[1]['title'] ) ) { ?>
 	<div class="fifth">
 		<a href="<?php print $icons[1]['link']; ?>">
-			<img src="<?php print $icons[1]['image']; ?>">
+			<img src="<?php print $icons[1]['image']; ?>" alt="<?php print $icons[1]['title']; ?>">
 			<h5><?php print $icons[1]['title']; ?></h5>
 		</a>
 	</div>
@@ -121,7 +121,7 @@ function the_icon_showcase() {
 	if ( !empty( $icons[2]['link'] ) && !empty( $icons[2]['image'] ) && !empty( $icons[2]['title'] ) ) { ?>
 	<div class="fifth">
 		<a href="<?php print $icons[2]['link']; ?>">
-			<img src="<?php print $icons[2]['image']; ?>">
+			<img src="<?php print $icons[2]['image']; ?>" alt="<?php print $icons[2]['title']; ?>">
 			<h5><?php print $icons[2]['title']; ?></h5>
 		</a>
 	</div>
@@ -130,7 +130,7 @@ function the_icon_showcase() {
 	if ( !empty( $icons[3]['link'] ) && !empty( $icons[3]['image'] ) && !empty( $icons[3]['title'] ) ) { ?>
 	<div class="fifth">
 		<a href="<?php print $icons[3]['link']; ?>">
-			<img src="<?php print $icons[3]['image']; ?>">
+			<img src="<?php print $icons[3]['image']; ?>" alt="<?php print $icons[3]['title']; ?>">
 			<h5><?php print $icons[3]['title']; ?></h5>
 		</a>
 	</div>
@@ -139,7 +139,7 @@ function the_icon_showcase() {
 	if ( !empty( $icons[4]['link'] ) && !empty( $icons[4]['image'] ) && !empty( $icons[4]['title'] ) ) { ?>
 	<div class="fifth">
 		<a href="<?php print $icons[4]['link']; ?>">
-			<img src="<?php print $icons[4]['image']; ?>">
+			<img src="<?php print $icons[4]['image']; ?>" alt="<?php print $icons[4]['title']; ?>">
 			<h5><?php print $icons[4]['title']; ?></h5>
 		</a>
 	</div>
