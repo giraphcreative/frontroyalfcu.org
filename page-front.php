@@ -10,7 +10,7 @@ get_header();
 
 	<?php the_showcase(); ?>
 
-	<div class="home-pad bg-grey-light group">
+	<div class="home-pad bg-grey-light group" role="main">
 		
 		<?php the_ad_showcase(); ?>
 
