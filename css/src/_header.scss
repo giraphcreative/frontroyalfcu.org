@@ -113,7 +113,7 @@ header {
 					}
 				}
 
-				&:hover, &.open {
+				&:hover, &:focus, &.open {
 					a {
 						background-color: lighten( $forest, 5% );
 					}
