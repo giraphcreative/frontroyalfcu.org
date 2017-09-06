@@ -16,9 +16,9 @@ function the_showcase() {
 
 				// store the title and subtitle
 				$title = ( isset( $slide["title"] ) ? $slide["title"] : '' );
-				$alt = ( isset( $slide['alt-text'] ) ? $slide["alt-text"] : "Link to " . $slide["link"] );
 				$subtitle = ( isset( $slide["subtitle"] ) ? $slide["subtitle"] : '' );
 				$link = ( isset( $slide["link"] ) ? $slide["link"] : '' );
+				$alt = ( isset( $slide['alt-text'] ) ? $slide["alt-text"] : "Link to " . $link );
 
 				// check if it's an image or video
 				if ( p_is_image( $slide["image"] ) ) {
