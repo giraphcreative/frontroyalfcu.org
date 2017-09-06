@@ -2,6 +2,7 @@
 
 header {
 	text-align: center;
+	position: relative;
 
 	.logo {
 		padding: 10px 20px;
@@ -172,7 +173,7 @@ header {
 		@include respond-to( 768px ) {
 			position: absolute;
 			right: 30px;
-			top: 110px;
+			top: 100px;
 		}
 	}
 }
