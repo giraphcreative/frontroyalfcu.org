@@ -43,6 +43,13 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Alt text',
+        'desc' => 'Specify alt text for this slide.',
+        'id'   => 'alt-text',
+        'type' => 'text',
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
         'name' => 'Link',
         'desc' => 'Specify a URL to which this ad should link.',
         'id'   => 'link',
@@ -81,6 +88,13 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $ad_showcase_metabox->add_group_field( $ad_showcase_metabox_group, array(
+        'name' => 'Alt Text',
+        'desc' => 'Specify alt text for the icon.',
+        'id'   => 'alt-text',
+        'type' => 'text',
+    ) );
+
+    $ad_showcase_metabox->add_group_field( $ad_showcase_metabox_group, array(
         'name' => 'Link',
         'desc' => 'Specify a URL to which this ad should link.',
         'id'   => 'link',
@@ -116,6 +130,14 @@ function page_metaboxes( $meta_boxes ) {
         'id'   => 'image',
         'type' => 'file',
         'preview_size' => array( 100, 100 )
+    ) );
+
+    $icon_showcase_metabox->add_group_field( $icon_showcase_metabox_group, array(
+        'name' => 'Image Alt Text',
+        'desc' => 'Set alt text for the icon.',
+        'id'   => 'alt-text',
+        'type' => 'text',
+        'sanitization_cb' => false
     ) );
 
     $icon_showcase_metabox->add_group_field( $icon_showcase_metabox_group, array(
