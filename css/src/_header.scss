@@ -20,6 +20,7 @@ header {
 		display: block;
 		transition: 400ms opacity ease-in-out;
 		text-align: center;
+		text-decoration: none;
 
 		&:hover {
 			opacity: .8;
@@ -171,7 +172,7 @@ header {
 		@include respond-to( 768px ) {
 			position: absolute;
 			right: 30px;
-			top: 90px;
+			top: 110px;
 		}
 	}
 }
