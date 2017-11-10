@@ -27,7 +27,7 @@ include( "library/showcase.php" );
 
 
 // add editor stylesheet
-add_editor_style( 'editor-style.css' );
+// add_editor_style( 'editor-style.css' );
 
 
 // pagination
