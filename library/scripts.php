@@ -22,6 +22,7 @@ add_filter( 'script_loader_tag', 'add_noscript_filter', 10, 3 );
 
 
 // disable emoticons
+/*
 function disable_wp_emojicons() {
 
   // all actions related to emojis
@@ -37,6 +38,6 @@ function disable_wp_emojicons() {
   add_filter( 'tiny_mce_plugins', 'disable_emojicons_tinymce' );
 }
 add_action( 'init', 'disable_wp_emojicons' );
-
+*/
 
 ?>
