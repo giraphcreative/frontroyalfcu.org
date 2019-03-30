@@ -33,7 +33,7 @@
 
 	<div class="colophon">
 		<div class="third">
-			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright" alt="NCUA Logo">Your savings are federally insured to at least $250,000, ad backed by the full faith and credit of the united states government. 
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright" alt="NCUA Logo">This credit union is federally insured by the National Credit Union Administration 
 		</div>
 		<div class="third">
 			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright" alt="Equal Housing Lender">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
