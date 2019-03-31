@@ -61,6 +61,9 @@ jQuery(document).ready(function($){
 		if ( the_link.hasClass( 'bypass' ) ||
 			the_link_href.match( /frontroyalfcu.test/i ) || 
 			the_link_href.match( /frontroyalfcu.org/i ) || 
+			the_link_href.match( /mortgages.cumortgage.net/i ) || 
+			the_link_href.match( /cumortgage.mycuhomeadvantage.com/i ) || 
+			the_link_href.match( /www.camsbycbs4.net/i ) || 
 			the_link_href.charAt(0) === '#' || 
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
