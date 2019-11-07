@@ -39,6 +39,10 @@
 			<p class="caps"><strong>Home Banking</strong></p>
 			<p>Log in &gt;</p>
 		</a>
+		
+		<a href="/feedback" class="feedback" target="_blank">
+			<p class="caps"><strong>Rate Your<br> Royal Treatment</strong></p>
+		</a>
 
 	</div>
 

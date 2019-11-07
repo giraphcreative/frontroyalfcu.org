@@ -1,0 +1,54 @@
+
+
+.testimonials {
+	background: url(../img/bg-lime-diamonds.png) center center;
+	padding: 20px;
+	
+	@include respond-to( 768px ) {
+		padding: 40px;
+	}
+	
+	@include respond-to( 1024px ) {
+		padding: 60px;
+	}
+
+	.testimonial {
+		border: 3px solid $forest;
+		background: rgba( white, .7 );
+		padding: 20px 40px;
+		color: $forest;
+		display: none;
+		min-height: 170px;
+	
+		@include respond-to( 500px ) {
+			background: rgba( white, .7 ) url(../img/testimonial-quote.png) left center no-repeat;
+			padding-left: 160px;
+		}
+	
+		@include respond-to( 768px ) {
+			padding: 30px 40px 40px 160px;
+		}
+
+		h4 {
+			padding: 0;
+			margin: 0;
+			font-size: 20px;
+
+			@include respond-to( 768px ) {
+				font-size: 26px;
+			}
+		}
+
+		.testimonial-author {
+			display: block;
+			text-align: right;
+			font-size: 1.2em;
+			font-style: italic;
+		}
+
+		&:first-child {
+			display: block;
+		}
+	}
+}
+

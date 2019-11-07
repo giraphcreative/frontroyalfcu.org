@@ -22,7 +22,7 @@ include( "library/metabox.php" );
 // include quote metaboxes/functions
 // include( "library/title.php" );
 include( "library/showcase.php" );
-// include( "library/accordion.php" );
+include( "library/post-type/testimonial.php" );
 
 
 

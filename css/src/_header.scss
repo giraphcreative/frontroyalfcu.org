@@ -38,7 +38,39 @@ header {
 
 		@include respond-to( 600px ) {
 			float: right;
-			padding: 20px 50px;
+			padding: 20px;
+			width: 250px;
+		}
+	}
+
+	.feedback {
+		background: $lime;
+		color: white;
+		padding: 10px 20px;
+		display: block;
+		transition: 400ms opacity ease-in-out;
+		text-align: center;
+		text-decoration: none;
+
+		&:hover {
+			opacity: .8;
+			text-decoration: none;
+		}
+	
+		p {
+			padding: 0;
+
+			&.caps {
+				text-transform: uppercase
+			}
+		}
+
+		@include respond-to( 600px ) {
+			float: right;
+			clear: right;
+			padding: 20px;
+			width: 250px;
+			margin-top: 10px;
 		}
 	}
 
@@ -172,7 +204,7 @@ header {
 
 		@include respond-to( 768px ) {
 			position: absolute;
-			right: 30px;
+			right: 50%;
 			top: 100px;
 		}
 	}
