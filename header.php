@@ -40,7 +40,7 @@
 			<p>Log in &gt;</p>
 		</a>
 		
-		<a href="/feedback" class="feedback" target="_blank">
+		<a href="/feedback" class="feedback">
 			<p class="caps"><strong>Rate Your<br> Royal Treatment</strong></p>
 		</a>
 
