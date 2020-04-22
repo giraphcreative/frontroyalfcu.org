@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
 
 
 	// do third-party link confirm dialog
-	$( '.content a:not(.previous):not(.next):not(.lightbox-iframe), a.off-site' ).click(function( e ){
+	$( '.content a:not(.previous):not(.next):not(.lightbox-iframe), a.off-site, .nav-menu a' ).click(function( e ){
 		
 		// break the normal linking behavior
 		e.preventDefault();
@@ -68,7 +68,7 @@ jQuery(document).ready(function($){
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
 		} else {
-			if ( confirm( "This link is taking you to a third party provider - are you sure you want to proceed?" ) ) {
+			if ( confirm( "You are leaving frontroyalfcu.org and entering a third party website that is not a part of Front Royal Federal Credit Union.  The content you are about to view is produced by a third party unaffiliated to Front Royal Federal Credit Union. Front Royal FCU takes no responsibility for the content of the page." ) ) {
 				window.open( the_link_href, "_blank" );
 			}
 		}
