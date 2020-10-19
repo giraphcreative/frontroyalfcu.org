@@ -40,4 +40,4 @@ function disable_wp_emojicons() {
 add_action( 'init', 'disable_wp_emojicons' );
 */
 
-?>
+
