@@ -63,6 +63,7 @@ jQuery(document).ready(function($){
 			the_link_href.match( /frontroyalfcu.org/i ) || 
 			the_link_href.match( /mortgages.cumortgage.net/i ) || 
 			the_link_href.match( /cumortgage.mycuhomeadvantage.com/i ) || 
+			the_link_href.match( /frontroyalfcu.cuconnections.com/i ) || 
 			the_link_href.match( /www.camsbycbs4.net/i ) || 
 			the_link_href.charAt(0) === '#' || 
 			the_link_href.charAt(0) === '/' ) {
