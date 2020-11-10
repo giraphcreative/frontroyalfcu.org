@@ -36,7 +36,7 @@
 			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-ncua.png" class="alignright" alt="NCUA Logo">This credit union is federally insured by the National Credit Union Administration 
 		</div>
 		<div class="third">
-			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright" alt="Equal Housing Lender">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
+			<img src="<?php bloginfo( 'template_url' ); ?>/img/logo-equal-housing.png" class="alignright" alt="Logo for Equal Housing Lender">Equal Housing Lender - We do business in accordance with the Federal Fair Housing Law and the Equal Housing Opportunity Act. 
 		</div>
 		<div class="third links">
 			<a href="https://www.facebook.com/FRFCU/" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png" class="alignright" alt="Go to our Facebook Page"></a>
