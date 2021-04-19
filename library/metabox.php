@@ -187,12 +187,9 @@ function page_metaboxes( $meta_boxes ) {
         'type' => 'select',
         'options' => array(
             'red' => 'Red',
-            'orange' => 'Orange',
             'yellow' => 'Yellow',
             'lime' => 'Lime',
-            'navy' => 'Navy',
-            'blue' => 'Blue',
-            'teal' => 'Teal'
+            'forest' => 'Forest'
         )
     ) );
 

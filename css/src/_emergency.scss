@@ -1,5 +1,9 @@
 
 
+$red: #bc3033;
+$yellow: #ffaa00;
+
+
 .emergency-bar-container {
 	background: $grey-light;
 	padding: 10px 10px 7px 10px;
@@ -10,9 +14,11 @@
 	z-index: 200;
 	border-bottom: 1px solid $grey;
 	text-align: center;
+	@include font-bold;
 
 	a {
 		color: $grey;
+		text-decoration: none;
 
 		&:hover {
 			text-decoration: none;
@@ -29,13 +35,44 @@
 		cursor: hand;
 	}
 
+	&.red {
+		background: lighten( $red, 40% );
+		color: $red;
+		border-bottom: 1px solid $red;
+
+		a {
+			color: $red;
+		}
+	}
+
+	&.yellow {
+		background: lighten( $yellow, 40% );
+		color: darken( $yellow, 20% );
+		border-bottom: 1px solid $yellow;
+
+
+		a {
+			color: darken( $yellow, 20% );
+		}
+	}
+
 	&.lime {
 		background: lighten( $lime, 40% );
-		color: $lime;
+		color: darken( $lime, 10% );
 		border-bottom: 1px solid $lime;
 
 		a {
-			color: $lime;
+			color: darken( $lime, 10% );
+		}
+	}
+
+	&.forest {
+		background: lighten( $forest, 40% );
+		color: $forest;
+		border-bottom: 1px solid $forest;
+
+		a {
+			color: $forest;
 		}
 	}
 
