@@ -1,0 +1,43 @@
+
+
+.emergency-bar-container {
+	background: $grey-light;
+	padding: 10px 10px 7px 10px;
+	color: $grey-dark;
+	@include clearfix;
+	display: none;
+	position: relative;
+	z-index: 200;
+	border-bottom: 1px solid $grey;
+	text-align: center;
+
+	a {
+		color: $grey;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&.show {
+		display: block;
+	}
+
+	.fa-close {
+		float: right;
+		margin: 0 0 3px 20px;
+		cursor: hand;
+	}
+
+	&.lime {
+		background: lighten( $lime, 40% );
+		color: $lime;
+		border-bottom: 1px solid $lime;
+
+		a {
+			color: $lime;
+		}
+	}
+
+}
+
