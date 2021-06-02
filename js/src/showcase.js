@@ -110,7 +110,7 @@ jQuery(document).ready(function($){
 				if ( slide_count > 1 ) {
 					auto_rotate = setInterval( next_slide, 10000 );
 				}
-			}, 500 );
+			}, 1000 );
 
 			
 
