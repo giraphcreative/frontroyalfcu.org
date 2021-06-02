@@ -89,16 +89,7 @@ jQuery(document).ready(function($){
 			var showcase_height = function(){
 				var current_slide = get_current_slide(),
 					current_slide_img = current_slide.find( 'img' );
-				if ( showcase.find( '.slide-wrapper' ).length ) {
-					var slide_wrapper_margin = showcase.find( '.slide-wrapper' ).css( 'margin-top' ).replace( 'px', '' ) * 2;
-				} else {
-					var slide_wrapper_margin = 0;
-				}
-				if ( $( window ).width() >= 768 ) {				
-					showcase.height( current_slide_img.height() + slide_wrapper_margin );
-				} else {
-					showcase.height( current_slide.height() );
-				}
+				showcase.height( Math.floor( current_slide.height() ) );
 			};
 
 
@@ -110,7 +101,7 @@ jQuery(document).ready(function($){
 				if ( slide_count > 1 ) {
 					auto_rotate = setInterval( next_slide, 10000 );
 				}
-			}, 1000 );
+			}, 500 );
 
 			
 
