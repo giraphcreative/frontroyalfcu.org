@@ -112,7 +112,7 @@ function p_image_resize( $url, $width, $height = null, $crop = null, $single = t
 function p_is_image( $img_path ) {
 
     // valid image extensions
-    $valid_extensions = array( 'jpg', 'png', 'gif' );
+    $valid_extensions = array( 'jpg', 'png', 'gif', 'jpeg', 'webp' );
 
     // get file info
     $info = pathinfo( $img_path );
@@ -123,4 +123,3 @@ function p_is_image( $img_path ) {
 }
 
 
-?>
