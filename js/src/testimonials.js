@@ -8,7 +8,7 @@ jQuery(document).ready(function($){
 		setInterval(function(){
 			var currentTestimonial = $('.testimonial:visible');
 			var nextTestimonial = currentTestimonial.next('.testimonial');
-			console.log( nextTestimonial );
+			// console.log( nextTestimonial );
 			if ( nextTestimonial.length == 0 ) {
 				nextTestimonial = $('.testimonial:first');
 			}
