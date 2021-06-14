@@ -89,6 +89,7 @@ jQuery(document).ready(function($){
 			var showcase_height = function(){
 				var current_slide = get_current_slide(),
 					current_slide_img = current_slide.find( 'img' );
+				console.log( Math.floor( current_slide.height() ) );
 				showcase.height( Math.floor( current_slide.height() ) );
 			};
 
