@@ -94,7 +94,9 @@ jQuery(document).ready(function($){
 				} else {
 					var slide_wrapper_margin = 0;
 				}
-				if ( $( window ).width() >= 768 ) {				
+				if ( $( window ).width() >= 1220 ) {				
+					showcase.height( '373px' );
+				} else if ( $( window ).width() >= 768 ) {				
 					showcase.height( current_slide_img.height() + slide_wrapper_margin );
 				} else {
 					showcase.height( current_slide.height() );
