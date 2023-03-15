@@ -65,6 +65,7 @@ jQuery(document).ready(function($){
 			the_link_href.match( /cumortgage.mycuhomeadvantage.com/i ) || 
 			the_link_href.match( /frontroyalfcu.cuconnections.com/i ) || 
 			the_link_href.match( /www.camsbycbs4.net/i ) || 
+			the_link_href.match( /cuballot.com/i ) ||
 			the_link_href.charAt(0) === '#' || 
 			the_link_href.charAt(0) === '/' ) {
 			location.href = the_link_href;
