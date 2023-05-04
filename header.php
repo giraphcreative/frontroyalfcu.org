@@ -3,6 +3,15 @@
 <!--[if IE 8]><html class="ie ie8" <?php language_attributes(); ?>><![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!--><html <?php language_attributes(); ?>><!--<![endif]-->
 <head>
+
+<!-- tgtm -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5FH3VF3');</script>
+<!-- /gtm -->
+
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 
@@ -20,6 +29,10 @@
 
 </head>
 <body <?php body_class(); ?>>
+
+<!-- gtm-noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FH3VF3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- /gtm-noscript -->
 
 <?php the_emergency_bar(); ?>
 
