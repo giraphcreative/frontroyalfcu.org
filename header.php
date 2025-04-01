@@ -33,7 +33,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <![endif]-->
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=4" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=5" rel="stylesheet" type="text/css">
 
 </head>
 <body <?php body_class(); ?>>
@@ -47,25 +47,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="container">
 
 <header>
+<a href="#content" class="skip-content">Jump to main content</a>
 
 	<div class="wrap">
-
-		<a href="#content" class="skip-content">Jump to main content</a>
 
 		<div class="logo">
 			<a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<img src="<?php bloginfo( "template_url" ) ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
 			</a>
 		</div>
-		
-		<a href="https://frontroyalfcu.cuconnections.com/login" class="banking" target="_blank">
-			<p class="caps"><strong>Home Banking</strong></p>
-			<p>Log in &gt;</p>
-		</a>
-		
-		<a href="/feedback" class="feedback">
-			<p class="caps"><strong>Rate Your<br> Royal Treatment</strong></p>
-		</a>
+		<div class="header-buttons">
+			<a href="https://frontroyalfcu.cuconnections.com/login" class="banking" target="_blank">
+				<div class="button-space">
+					<p class="caps"><strong>Home Banking</strong></p>
+					<p>Log in &gt;</p>
+				</div>
+			</a>
+			
+			<a href="https://froyal-oao.cuconnections.com/" class="join">
+				<div class="button-space">
+					<p class="caps"><strong>Open Account</strong></p>
+					<p>Join today &gt;</p>
+				</div>
+			</a>
+			
+			<a href="/feedback" class="feedback">
+				<div class="button-space">
+					<p class="caps"><strong>Rate Your<br> Royal Treatment</strong></p>
+				</div>
+			</a>
+		</div>
 
 	</div>
 
