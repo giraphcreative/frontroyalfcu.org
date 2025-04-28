@@ -57,4 +57,26 @@ function pagination( $prev = '&laquo;', $next = '&raquo;' ) {
 }
 
 
-?>
+function post_submission_hook() { ?>
+    <script>
+    (function (d, e, u) {
+        var s = document.createElement(e);
+        s.src = u;
+        s.async = true;
+        s.defer = true;
+        var m = d.getElementsByTagName(e)[0];
+        m.parentNode.insertBefore(s, m);
+    })(document, 'script', 'https://cdn.datasteam.io/js/datasteampx.js');
+    MGX = typeof MGX === 'undefined' ? [] : MGX;
+    MGX.push({
+        AccessKey: 'D62B1A4C44E4',
+        Label: 'Conversion',
+        Info: 'Contact', 
+        OrderId: null,
+        OrderTotal: null
+    });
+    </script>
+    <?php
+}
+add_action( 'gform_after_submission', 'post_submission_hook', 10, 2 );
+

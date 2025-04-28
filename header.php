@@ -37,16 +37,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script>
 (function (d, e, u) {
-  var s = document.createElement(e);
-  s.src = u;
-  s.async = true;
-  s.defer = true;
-  var m = d.getElementsByTagName(e)[0];
-  m.parentNode.insertBefore(s, m);
+	var s = document.createElement(e);
+	s.src = u;
+	s.async = true;
+	s.defer = true;
+	var m = d.getElementsByTagName(e)[0];
+	m.parentNode.insertBefore(s, m);
 })(document, 'script', 'https://cdn.datasteam.io/js/datasteampx.js');
 MGX = typeof MGX === 'undefined' ? [] : MGX;
 MGX.push({
-  AccessKey: 'D62B1A4C44E4'
+	AccessKey: 'D62B1A4C44E4'
 });
 </script>
 
